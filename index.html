@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student App</title>
+    <style>
+        .studentCard {
+            background-color: antiquewhite;
+            color: blue;
+            width: 20vw;
+            padding: 10px;
+            min-height: 200px;
+            margin: 10px
+        }
+
+        #student-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Student APP</h1>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <select id="skills-select">
+            <option>React</option>
+            <option>Javascript</option>
+            <option>Python</option>
+        </select>
+        <button id="filter-btn">APPLY FILTER</button>
+    </div>
+    <div id="student-container">
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
